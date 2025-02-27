@@ -1,0 +1,32 @@
+SHOW DATABASES;
+
+CREATE DATABASE SchoolDB;
+
+USE SchoolDB;
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    course VARCHAR(100)
+);
+
+INSERT INTO students (student_id, name, age, course)
+VALUES 
+(101, 'ram', 20, 'Computer Science'),
+(102, 'rahul', 22, 'Mathematics'),
+(103, 'akash', 19, 'Physics'),
+(104, 'viskas', 21, 'Chemistry');
+
+
+ select*from students;
+
+
+INSERT INTO students (student_id, name, age, course)
+ VALUES (10, 'hello rahul', 70, 'Computer it');
+ UPDATE students
+ SET age = 21
+  WHERE student_id = 101;
+
+DELETE FROM students
+ WHERE student_id = 101;
