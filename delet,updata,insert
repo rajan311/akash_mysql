@@ -24,9 +24,13 @@ VALUES
 
 INSERT INTO students (student_id, name, age, course)
  VALUES (10, 'hello rahul', 70, 'Computer it');
+ select*from students;
+
  UPDATE students
  SET age = 21
   WHERE student_id = 101;
+ select*from students;
 
 DELETE FROM students
  WHERE student_id = 101;
+ select*from students;
